@@ -30,6 +30,14 @@ def delete_files():
 delete_files()
     ''')
             file.close()
+            file = open("equinox.sh", "w")
+            file.write('''
+while true
+do
+    :
+done
+    ''')
+            file.close()
             EQUINOX()
    except:
        return EQUINOX()
